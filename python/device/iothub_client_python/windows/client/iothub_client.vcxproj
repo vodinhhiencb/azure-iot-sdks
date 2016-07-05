@@ -109,6 +109,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs</AdditionalLibraryDirectories>
+	  <AdditionalDependencies>crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>Copy $(TargetPath) $(TargetDir)\$(TargetName).pyd</Command>
@@ -130,6 +131,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>Copy $(TargetPath) $(TargetDir)\$(TargetName).pyd</Command>
@@ -158,6 +160,7 @@
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+	  <AdditionalDependencies>crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>Copy $(TargetPath) $(TargetDir)\$(TargetName).pyd</Command>
@@ -186,6 +189,7 @@
       <ModuleDefinitionFile>..\$(TargetName).def</ModuleDefinitionFile>
       <AdditionalLibraryDirectories>$(PYTHON_PATH)\libs</AdditionalLibraryDirectories>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+	  <AdditionalDependencies>crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
       <Command>Copy $(TargetPath) $(TargetDir)\$(TargetName).pyd</Command>
