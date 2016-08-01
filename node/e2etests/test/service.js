@@ -15,7 +15,7 @@ var runTests = function (hubConnectionString) {
     it('Service client can connect using sas', function(done) {
       this.timeout(60000);
       var connStr = serviceSdk.ConnectionString.parse(hubConnectionString);
-      var sas = serviceSas.create(connStr.HostName, connStr.SharedAccessKeyName, connStr.SharedAccessKey, anHourFromNow()).toString();
+      var sas = serviceSas.create('barff', connStr.SharedAccessKeyName, connStr.SharedAccessKey, anHourFromNow()).toString();
       var serviceClient = serviceSdk.Client.fromSharedAccessSignature(sas);
       serviceClient.open(function(err, result) {
         if(err) {
